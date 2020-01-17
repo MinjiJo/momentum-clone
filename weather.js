@@ -25,8 +25,8 @@ function handleGeoSucces(position) {
   const latitude = position.coords.latitude;
   const longitude = position.coords.longitude;
   const coordsObj = {
-    latitude,
-    longitude
+    latitude, //latitude = latitude
+    longitude //longitude = longitude
   };
   saveCoords(coordsObj);
   getWeather(latitude, longitude);
